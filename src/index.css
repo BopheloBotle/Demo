@@ -1,9 +1,33 @@
-/* font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal; Whenever i want to use this font i just put it like this*/
 body {
   background-color: black;
   color: white;
+}
+.logo {
+  max-width: 150px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+  font-family: "Instrument Serif", serif;
+  font-size: 30px;
+}
+nav {
+  padding: 20px 20px 20px 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: rgb(255, 16, 240);
 }
 h1,
 h2,
@@ -14,35 +38,40 @@ h3 {
   font-style: normal;
   font-size: 60px;
 }
+
 p {
   color: white;
   font-family: "Pontano Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: lighter;
+  font-weight: bold;
   font-style: normal;
 }
+
 .introduction {
   background-color: black;
-  text-align: center;
+  text-align: left;
   margin: 60px;
   padding-left: 50px;
-  padding: 160px 30px;
+  padding: 100px 30px 30px 30px;
+  box-shadow: 5px 5px 8px 8px rgb(255, 16, 240);
+  position: relative;
 }
+
 .icons {
   padding: 10px;
 }
-.ig {
+
+.ig,
+.link,
+.git {
   margin-right: 5px;
   font-size: 30px;
 }
-.link {
-  margin-right: 5px;
-  font-size: 30px;
-}
+
 .git {
   margin-left: 5px;
-  font-size: 30px;
 }
+
 .btn-branding {
   background: rgb(255, 16, 240);
   border-radius: 40px;
@@ -50,16 +79,38 @@ p {
   font-size: 20px;
   line-height: 27px;
   padding: 12px 20px;
-  box-shadow: 3px 3px 3px 3px rgb(255, 16, 240);
+  box-shadow: 5px 5px 5px 5px rgb(255, 16, 240);
 }
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
-.introduction img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  border-radius: 10%; /* Make the image circular (adjust as needed) */
-  margin-right: 20px; /* Add spacing between the text and the image */
-  box-shadow: 3px 3px 3px 3px rgb(255, 16, 240); /* Apply box-shadow to the image */
+
+.row {
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.aboutt {
+  background-color: black;
+  text-align: left;
+  margin: 60px;
+  padding-left: 50px;
+  padding: 100px 30px 100px 30px;
+  box-shadow: 5px 5px 8px 8px rgb(255, 16, 240);
+  position: relative;
 }
