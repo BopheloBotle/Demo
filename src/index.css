@@ -2,7 +2,7 @@
   font-weight: 400;
   font-style: normal; Whenever i want to use this font i just put it like this*/
 body {
-  background-color: wheat;
+  background-color: black;
   color: white;
 }
 h1,
@@ -50,20 +50,16 @@ p {
   font-size: 20px;
   line-height: 27px;
   padding: 12px 20px;
-  box-shadow: 5px 5px 5px 5px rgb(255, 16, 240);
-}
-img {
-  border-style: solid rgb(255, 16, 240);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  align-content: right;
-  max-width: 100%;
-  max-height: 100%;
+  box-shadow: 3px 3px 3px 3px rgb(255, 16, 240);
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.introduction img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  border-radius: 10%; /* Make the image circular (adjust as needed) */
+  margin-right: 20px; /* Add spacing between the text and the image */
+  box-shadow: 3px 3px 3px 3px rgb(255, 16, 240); /* Apply box-shadow to the image */
 }
